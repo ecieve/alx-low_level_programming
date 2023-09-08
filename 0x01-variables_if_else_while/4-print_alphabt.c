@@ -7,15 +7,17 @@
  *
  * Return: Always 0 (Success)
  */
-int main() {
-    char letter[] = "abcdfghijklmnoprstuvwxyz"; // Define the string of allowed letters
-    int i;
+int main(void)
+{
+	int i;
 
-    for (i = 0; i < 24; i++) {
-        putchar(letter[i]);
-    }
-
-    putchar('\n');
-
-    return 0;
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
